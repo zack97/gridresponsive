@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+  .head-container ul {
+    display: none;
+  }
+
+  .head-container h1 {
+    font-size: 4.5rem;
+  }
+  .div-head {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-head p {
+    width: 100px;
+    height: 5px;
+    background-color: #00001a;
+  }
+}
