@@ -193,6 +193,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "section-div1 section-div2 section-div3";
   align-items: center;
+  background-color: yellow;
 }
 
 .section-container img {
