@@ -8,12 +8,12 @@ body {
   font-family: roboto;
   background-color: #fffdfa;
 }
+
 header {
-  width: 100%;
+  width: 1440px;
   height: 184px;
   display: flex;
   justify-content: center;
-  padding: 0px 120px;
 }
 
 ul {
@@ -26,11 +26,14 @@ a {
 }
 
 .head-container {
-  width: 100%;
+  width: 1110px;
   height: 184px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "h1 h1 h1 ul";
 }
 
 .div-head {
@@ -38,14 +41,20 @@ a {
 }
 .head-container ul {
   display: flex;
+  grid-area: ul;
 }
+
+.head-container h1 {
+ grid-area: h1;
+}
+
 
 .head-container ul li {
   margin: 25px;
   cursor: pointer;
 }
 .head-container ul li:nth-last-child(1) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 /*
@@ -54,7 +63,7 @@ a {
 */
 
 main {
-  width: 100%;
+  width: 1440px;
   height: 513px;
   display: flex;
   justify-content: center;
@@ -64,25 +73,32 @@ main {
   width: 1110px;
   height: 513px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "main-div1 main-div1 main-div2";
   gap: 20px;
 }
 
 .main-div1 {
   width: 691px;
   height: 479px;
-  display: grid;
+  grid-area: main-div1;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "main-d1 main-d1" 
+  "main-d2-d3";
+}
+.main-d2-d3{
+  display: flex;
+  grid-area: main-d2-d3;
 }
 
 .main-d1 {
   width: 660px;
   height: 220px;
-  grid-column-start: 1;
-  grid-column: span 2;
   overflow: hidden;
   margin-bottom: 30px;
+  grid-area: main-d1;
 }
 
 .main-d1 img {
@@ -93,9 +109,6 @@ main {
 .main-d2 {
   width: 314px;
   height: 220px;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 1;
 }
 
 .main-d2 h2 {
@@ -107,9 +120,6 @@ main {
 .main-d3 {
   width: 323px;
   height: 220px;
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-column-end: 2;
 }
 
 .main-d3 p {
@@ -130,6 +140,7 @@ main {
 .main-div2 {
   width: 395px;
   height: 479px;
+  grid-area: main-div2;
   background: #00001a;
   color: #fffdfa;
   padding: 20px;
@@ -168,17 +179,20 @@ span {
 **
 */
 
+
 section {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1440px;
 }
 
 .section-container {
-  width: 1108px;
+  width: 1110px;
   height: 329px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "section-div1 section-div2 section-div3";
   align-items: center;
 }
 
@@ -245,3 +259,4 @@ span {
   font-size: 1rem;
   color: #686868;
 }
+
