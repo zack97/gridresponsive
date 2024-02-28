@@ -1,23 +1,158 @@
 @media (max-width: 767px) {
   header {
+    /* width: auto; */
     padding: 0;
   }
+
   .head-container ul {
     display: none;
   }
 
+  .head-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h1 h1 h1 h1 div-head  ";
+  }
+
   .head-container h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   .div-head {
     display: contents;
     display: flex;
     flex-direction: column;
+    grid-area: div-head;
   }
 
-  .div-head p {
+  .div-head hr {
     width: 100px;
-    height: 5px;
+    height: 2px;
+    margin-bottom: 20px;
     background-color: #00001a;
+  }
+
+  main {
+    height: auto;
+  }
+  .main-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "main-div1"
+      "main-div1"
+      "main-div2";
+    gap: 20px;
+  }
+
+  .main-div1 {
+    width: auto;
+    height: 1200px;
+    grid-area: main-div1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "main-d1"
+      "main-d2-d3";
+  }
+
+  .main-d1 {
+    width: auto;
+    height: auto;
+  }
+  .main-d1 img {
+    width: 1100px;
+  }
+  .main-d1 {
+    overflow: visible;
+  }
+  .main-d2-d3 {
+    display: flex;
+    flex-direction: column;
+    grid-area: main-d2-d3;
+  }
+
+  .main-d2 {
+    width: auto;
+    height: auto;
+  }
+
+  .main-d2 h2 {
+    font-size: 9rem;
+    line-height: 8rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+
+  .main-d3 {
+    width: auto;
+    height: auto;
+  }
+
+  .main-d3 p {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 800;
+  }
+
+  .main-d3 button {
+    background: #f15d51;
+    width: 500px;
+    height: 108px;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+
+  .main-div2 {
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .main-div2 h2 {
+    color: #e9aa52;
+    font-size: 100px;
+    height: 40px;
+    margin-bottom: 100px;
+  }
+
+  .main-div2 h3,
+  p,
+  span {
+    margin-bottom: 100px;
+  }
+
+  .main-div2 p {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #e8e8e8;
+  }
+
+  .main-div2 h3 {
+    font-size: 50px;
+  }
+  .main-div2 span {
+    height: 2px;
+    width: 100%;
+    background-color: #686868;
+  }
+
+  section {
+    display: flex;
+    justify-content: none;
+  }
+
+  .section-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "section-div1"
+      "section-div2"
+      "section-div3";
+    background-color: red;
   }
 }
