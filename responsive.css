@@ -8,10 +8,10 @@
     display: none;
   }
 
-  .head-container {
+  /* .head-container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "h1 h1 h1 h1 div-head  ";
-  }
+  } */
 
   .head-container h1 {
     font-size: 3.5rem;
