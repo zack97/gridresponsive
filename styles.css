@@ -7,10 +7,11 @@
 body {
   font-family: roboto;
   background-color: #fffdfa;
+  height: 100vh;
 }
 
 header {
-  width: 1440px;
+  width: auto;
   height: 184px;
   display: flex;
   justify-content: center;
@@ -31,10 +32,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "h1 h1 h1 ul"; */
 }
 
 .div-head {
@@ -44,11 +41,6 @@ a {
   width: 500px;
   display: flex;
   justify-content: space-between;
-  /* grid-area: ul; */
-}
-
-.head-container h1 {
-  /* grid-area: h1; */
 }
 
 .head-container ul li {
@@ -64,7 +56,7 @@ a {
 */
 
 main {
-  width: 1440px;
+  width: auto;
   height: 513px;
   display: flex;
   justify-content: center;
@@ -183,7 +175,7 @@ span {
 section {
   display: flex;
   justify-content: center;
-  width: 1440px;
+  width: auto;
 }
 
 .section-container {
