@@ -227,25 +227,9 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .head-container ul {
     display: none;
-  }
-
-  .div-head {
-    display: contents;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .div-head div {
-    height: 10px;
-  }
-
-  .div-head img {
-    height: 2px;
   }
 
   .main-d3 button {
